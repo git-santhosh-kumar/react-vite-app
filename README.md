@@ -15,4 +15,10 @@ npm create vite@latest
 
 ![alt text](image.png)
 
-###
+### Git setup
+- Navigate to your project directory: `cd /path/to/your/project`.
+- Initialize the Git repository: `git init`.
+- Add files to Git: `git add .`.
+- Commit the files: `git commit -m "Initial commit"`.
+- (Optional) Add a remote repository: `git remote add origin <remote-url>`.
+- (Optional) Push to the remote repository: `git push -u origin main`.
