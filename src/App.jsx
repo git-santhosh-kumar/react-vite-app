@@ -2,6 +2,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import Header from "./components/HeaderBand";
 import CounterCard from "./components/CounterCard";
 import ApiForms from "./components/ApiForms"
+import CustomButton from './components/CustomButton'
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 function App() {
   return (
@@ -19,12 +22,26 @@ function App() {
       >
 
         <Row>
-          <Col xs={12} md={8}>
-            {/* Showing form with api integration */}
-            <ApiForms></ApiForms>           
-          </Col>
-          <Col xs={12} md={4}>
-            <CounterCard></CounterCard>
+          <Col lg={12}>
+          <Tabs
+            defaultActiveKey="home"
+            id="uncontrolled-tab-example"
+            className="mb-3"
+          >
+            <Tab eventKey="home" title="Home">
+              Tab content for Home
+            </Tab>
+            <Tab eventKey="apiForm" title="API Form">
+              {/* Showing form with api integration */}
+              <ApiForms></ApiForms>
+            </Tab>
+            <Tab eventKey="button" title="Custom Buttons">
+              <CustomButton />
+            </Tab>
+            <Tab eventKey="counterCard" title="Counter Card" className="d-flex justify-content-center">
+              <CounterCard></CounterCard>
+            </Tab>
+          </Tabs>
           </Col>
         </Row>
 
