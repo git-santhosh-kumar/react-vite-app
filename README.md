@@ -22,3 +22,13 @@ npm create vite@latest
 - Commit the files: `git commit -m "Initial commit"`.
 - (Optional) Add a remote repository: `git remote add origin <remote-url>`.
 - (Optional) Push to the remote repository: `git push -u origin main`.
+
+### Install Bootstrap
+```sh
+npm install react-bootstrap bootstrap
+```
+
+[React Icons](https://react-icons.github.io/react-icons/)
+```sh
+npm i react-icons
+```
