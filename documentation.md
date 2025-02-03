@@ -99,10 +99,14 @@ function MyButton() {
 
 import { useState } from 'react';
 
+- You’ll get two things from useState: the current state (count), and the function that lets you update it (setCount). You can give them any names, but the convention is to write [something, setSomething].
+
+const [count, setCount] = useState(0);
+
 # Using Hooks
+- Functions starting with use are called Hooks. useState is a built-in Hook provided by React.
 
-
-
+# Sharing data between components
 
 
 
