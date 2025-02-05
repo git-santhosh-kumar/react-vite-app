@@ -3,6 +3,8 @@ import Header from "./components/HeaderBand";
 import CounterCard from "./components/CounterCard";
 import ApiForms from "./components/ApiForms"
 import CustomButton from './components/CustomButton'
+import Home from './components/Home'
+
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
@@ -15,9 +17,9 @@ function App() {
         xs="fluid"
         style={{
           backgroundColor: '#FFF', 
-          minHeight: 'calc(100vh - 60px)', 
+          minHeight: 'calc(100vh - 60px)',
           overflow: 'auto'
-          }}
+        }}
         className="py-2"
       >
 
@@ -29,7 +31,7 @@ function App() {
             className="mb-3"
           >
             <Tab eventKey="home" title="Home">
-              Tab content for Home
+              <Home />
             </Tab>
             <Tab eventKey="apiForm" title="API Form">
               {/* Showing form with api integration */}
