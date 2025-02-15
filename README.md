@@ -35,3 +35,4 @@ npm i react-icons
 
 ### References
 - Click [here](https://react.dev/learn) to see react.js documentation.
+- Developer documentation is [here](https://github.com/git-santhosh-kumar/react-vite-app/blob/master/documentation.md)

@@ -163,5 +163,30 @@ function MyButton({ count, onClick }) {
 
 The `onClick` handler fires event from child component by passing new count value as a prop to it's parent. This is called "lifting state up". this shows how data is shared between the components.
 
+### The build tools
 
+**Vite**
+[Vite](https://vite.dev/) is a build tool that aims to provide a faster and leaner development experience for modern web projects.
+
+`npx vite@latest —template react`
+
+**Parcel**
+[Parcel](https://parceljs.org/) combines a great out-of-the-box development experience with a scalable architecture that can take your project from just getting started to massive production applications.
+
+`npm install —save-dev parcel`
+
+### Rendering strategies
+
+**Single-page apps (SPA)** load a single HTML page and dynamically updates the page as the user interacts with the app. SPAs are fast and responsive, but they can have slower initial load times. SPAs are the default architecture for most build tools.
+
+**Streaming Server-side rendering (SSR)** renders a page on the server and sends the fully rendered page to the client. SSR can improve performance, but it can be more complex to set up and maintain than a single-page app. With the addition of streaming, SSR can be very complex to set up and maintain.
+
+**Static site generation (SSG)** generates static HTML files for your app at build time. SSG can improve performance, but it can be more complex to set up and maintain than server-side rendering.
+
+**React Server Components (RSC)** lets you mix build-time, server-only, and interactive components in a single React tree. RSC can improve performance, but it currently requires deep expertise to set up and maintain.See [Parcel’s RSC examples](https://github.com/parcel-bundler/rsc-examples).
+
+### Typescript support in React app
+- You can get full React Web support by adding `@types/react` and `@types/react-dom` to your project.
+
+`npm install @types/react @types/react-dom`
 
